@@ -399,6 +399,22 @@ class SimpleAnalytics(object):
         return self.__serial_price(3)
 
     @property
+    def highprice(self):
+        """ highest股價序列
+
+            :rtype: list
+        """
+        return self.__serial_price(4)
+
+    @property
+    def lowprice(self):
+        """ lowest股價序列
+
+            :rtype: list
+        """
+        return self.__serial_price(5)
+
+    @property
     def value(self):
         """ 成交量序列（張）
 
